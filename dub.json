@@ -1,0 +1,7 @@
+{
+	"name": "marray",
+	"targetType": "library",
+	"description": "MultiArray",
+	"license": "BSD 2-clause",
+	"authors": ["Mara Bos <m-ou.se@m-ou.se>"]
+}
