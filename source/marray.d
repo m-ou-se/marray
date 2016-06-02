@@ -63,11 +63,4 @@ struct MultiArray(T, size_t N) {
 	MultiArray save() { return this; }
 }
 
-private T[N - 1] removeIndex(T, size_t N)(in T[N] input, size_t index) {
-	T[N - 1] output = void;
-	output[0 .. index] = input[0 .. index];
-	output[index .. $] = input[index + 1 .. $];
-	return output;
-}
-
 static assert(isRandomAccessRange!(MultiArray!(int, 3)));
